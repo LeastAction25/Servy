@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import businessImg from '../contact/businessImg1.jpeg'; // update path as needed
+import businessImg from "../../assets/businessImg1.jpeg"; // update path as needed
 import emailjs from "@emailjs/browser";
 import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../../../utils/config";
 import { useFormik } from "formik";
