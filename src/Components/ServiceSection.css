@@ -1,0 +1,113 @@
+/* Banner Section */
+.service-banner {
+  height: 300px;
+  background: url("https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg")
+    no-repeat center center/cover;
+  position: relative;
+  top: 100px;
+}
+
+.service-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.service-banner h1 {
+  z-index: 2;
+  position: relative;
+}
+
+/* Card Styling */
+.service-card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  bottom: 100px;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  background: rgba(0, 58, 132, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.service-card:hover .card-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .service-banner {
+    height: 200px;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-overlay {
+    padding: 1rem;
+  }
+}
+.tittle{
+  color: black;
+}
+
+
+.services-container h1 span {
+  color: #003a84;
+  border-bottom: 3px solid #003a84;
+}

@@ -1,0 +1,22 @@
+
+.team-section {
+  padding: 2rem 1rem;
+  text-align: center;
+
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+

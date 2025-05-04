@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 2rem;
+  background: #003A84;
+  position: sticky;
+  top: 0;
+  left:0;
+  z-index: 1000;
+} */
+.navbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 2rem;
+  background: #f2f1f1;
+  border-radius: rem;
+  height: 70px;
+  box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.3);
+}
+.logo{
+  margin-top: 5px;
+}
+.strike-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 34rem;
+}
+
+.strike-text {
+  margin-left: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: -0.5rem;
+}
+
+
+.red {
+  font-size: 32px;
+  margin-left: 5px;
+  position: relative;
+  top: 8px;
+  color: #000000;
+ padding-bottom: 20px;
+}.red:hover{
+  color: #003cf1;
+}
+.menu-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 10px;
+  font-size: 28px;
+}
+
+.menu-links a {
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 8px 0;
+  top: -10px;
+  transition: color 0.3s ease;
+}
+
+.menu-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00bcd4;
+  transition: width 0.4s ease;
+}
+
+.menu-links a:hover {
+  color: #003cf1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.Servicetext {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 18px;
+  top: -10px;
+}
+.Servicetext:hover{
+  color: #003cf1;
+}
+.dropdown-toggle {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown-toggle:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00bcd4;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  background: #ffffff;
+  /* border-radius: 12px; */
+  
+  border: 1px solid #000000;
+  /* box-shadow: 0 8px 20px rgba(0, 191, 255, 0.2); */
+  padding: 1px 0;
+  min-width: 250px;
+  z-index: 999;
+  display: none;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  margin-top: 3px;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+ 
+  display: block;
+  padding: 10px;
+  margin: 0 10px;
+  text-align: left;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  /* border-radius: 8px; */
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  /* background: linear-gradient(90deg, #77d5f5, #57a4f1); */
+  color: #003cf1;
+  transform: scale(1.05);
+}
+
+@media (min-width: 769px) {
+  .dropdown.open .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdown-menu li a::after {
+  content: none !important;
+}
+
+.dropdown > a,
+.dropdown > button {
+  margin-top: -1px;
+  display: inline-block;
+}
+
+
+@media (max-width: 1024px) {
+  .strike-container {
+    margin-left: 10px; /* adjust as needed */
+  }
+
+  .menu-toggle {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    z-index: 999;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-links {
+    flex-direction: column;
+    background: #003a84;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    gap: 1rem;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+
+  .menu-links.hide {
+    display: none;
+  }
+
+  .menu-links.show {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: #ffffff;
+    box-shadow: none;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}

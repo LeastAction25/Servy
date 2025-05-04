@@ -1,0 +1,148 @@
+.sample-container {
+  background-color: white;
+}
+
+.sample-heading {
+  color: #003a84;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sample-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.25);
+  background: linear-gradient(135deg, #f7f9fc 0%, #e6ecf5 100%);
+  border: 1px solid #d3e0f0;
+  position: relative;
+  animation: fadeInCard 0.8s ease forwards;
+  animation-fill-mode: both;
+}
+
+.sample-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.25);
+  border-color: #a5c3eb;
+}
+
+.sample-img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  animation: fadeImage 1s ease forwards;
+  animation-fill-mode: both;
+}
+
+.sample-title {
+  color: #003a84;
+}
+
+.sample-desc {
+  color: #003a84;
+  flex-grow: 1;
+}
+
+.royal-btn {
+  background-color: #003a84 !important;
+  color: white;
+  border: 2px solid #003a84 !important;
+  padding: 6px 12px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.royal-btn:hover {
+  background-color: #2960ac !important;
+  border: 2px solid #003a84 !important;
+  color: white;
+}
+
+.royals-btn {
+  background-color: #003a84 !important;
+  color: white;
+  border: 2px solid #003a84 !important;
+  padding: 6px 12px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.royals-btn:hover {
+  background-color: #2960ac !important;
+  border: 2px solid #003a84 !important;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .royals-btn {
+    width: 30%;
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+}
+
+@keyframes fadeImage {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.sample-card:hover .sample-img {
+  animation: fadeImage 0.5s ease forwards;
+  animation-fill-mode: both;
+}
+.sample-card:hover .sample-title {
+  color: #1c4a8b;
+}
+
+.sample-card:hover .sample-desc {
+  color: #1c4a8b !important;
+}
+.sample-card:hover .royal-btn {
+  background-color: #1c4a8b;
+  color: white;
+}
+
+.sample-card:hover .royal-btn:hover {
+  background-color: #003a84;
+  color: white;
+}
+.sample-card:hover .royal-btn:active {
+  background-color: #003a84;
+  color: white;
+}
+
+.sample-card:hover .royal-btn:focus {
+  background-color: #003a84;
+  color: white;
+}
+.sample-card:hover .royal-btn:focus-visible {
+  background-color: #003a84;
+  color: white;
+}
+
+.sample-card:hover .royal-btn:focus-within {
+  background-color: #003a84;
+  color: white;
+}
+.sample-card:hover .royal-btn:focus-visible {
+  background-color: #003a84;
+  color: white;
+}
+
+.sample-card:hover .royal-btn:focus-within {
+  background-color: #003a84;
+  color: white;
+}
+.sample-card:hover .royal-btn:focus-visible {
+  background-color: #003a84;
+  color: white;
+}

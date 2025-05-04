@@ -1,0 +1,41 @@
+
+/* servis portfoleo */
+.body{
+  margin-top: 0%;
+}
+
+.slider_container {
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 400vw;
+  height: 100vh;
+  transition: transform 2s ;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 0 2rem 2rem 0;
+}

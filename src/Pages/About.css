@@ -1,0 +1,58 @@
+.about-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .text-orange {
+    color: #003a84;
+  }
+  
+  .btn-orange {
+    background-color: #003a84;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+  .btn-orange:hover {
+    background-color: #003a84;
+  }
+  
+  .image-wrapper {
+    display: inline-block;
+    position: relative;
+    height:100%;
+    width: 700px;
+  }
+  
+  .main-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .black-circle {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    top: -20px;
+    left: 60%;
+  }
+  
+  .orange-circle {
+    width: 150px;
+    height: 150px;
+    background-color: #f27321;
+    top: 30%;
+    left: 40%;
+    transform: rotate(20deg);
+    z-index: -1;
+  }
+  
