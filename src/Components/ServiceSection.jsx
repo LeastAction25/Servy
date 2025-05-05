@@ -1,7 +1,8 @@
 import React from "react";
 import "./ServiceSection.css";
-import Waste from "../assets/Waste.jpg"
+import Waste from "../assets/Waste.jpg";
 import ServicesCard from "./ServicesCard";
+
 const services = [
   {
     title: "Laundry Services",
@@ -13,7 +14,7 @@ const services = [
   },
   {
     title: "Waste Management Services",
-    img:Waste,
+    img: Waste,
   },
   {
     title: "E-Seva Services",
@@ -29,7 +30,7 @@ const services = [
   },
   {
     title: "Rental Services",
-    img: "https://img.freepik.com/free-photo/vehicle-dealer-giving-keys-car-buyer-showroom_342744-728.jpg",
+    img: "https://rentalcochin.com/web_assets/assets/img/demo/monitoring.jpg",
   },
   {
     title: "Personal Care Services",
@@ -44,20 +45,21 @@ const services = [
 const ServiceSection = () => {
   return (
     <>
-      {/* Top Banner */}
-    
-
-      {/* </div> */}
+      {/* Services Banner */}
+   
 
       {/* Services Grid */}
       <section className="py-5 bg-light text-center">
-      <div className="services-container">
-      <h1><span>Our </span>Services</h1></div>
-      <ServicesCard></ServicesCard>
+        <div className="services-container">
+          <h1>
+            <span>Our </span>Services
+          </h1>
+        </div>
+        <ServicesCard />
         <div className="container">
           <div className="row g-4">
             {services.map((service, index) => (
-              <div className="col-md-4 col-sm-6" key={index}>
+              <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
                 <div className="cards h-100 shadow-sm border-0 service-card">
                   <div className="card-image-wrapper">
                     <img

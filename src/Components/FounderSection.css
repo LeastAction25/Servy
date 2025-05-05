@@ -1,20 +1,21 @@
-
-
 .founder-container {
   position: relative;
   top: 50px;
+  padding: 20px;
 }
+
 .founder-wrapper {
   background: rgb(52, 52, 131);
   padding: 4px;
   clip-path: polygon(0% 0%, 80% 0%, 100% 10%, 100% 100%, 20% 100%, 0% 90%);
-  width: 250px;
-  height: 400px;
-  /* position: relative;
-  left: 50px; */
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  /* padding: 10px; */
 }
 
-.founder {
+.founder,
+.cofounder {
   background: whitesmoke;
   clip-path: polygon(0% 0%, 80% 0%, 100% 10%, 100% 100%, 20% 100%, 0% 90%);
   width: 100%;
@@ -23,14 +24,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.cofounder {
-  width: 250px;
-  height: 400px;
-  background: white;
-  padding: 1rem;
-  clip-path: polygon(0% 0%, 80% 0%, 100% 10%, 100% 100%, 20% 100%, 0% 90%);
-  box-shadow: 0 4px 12px rgba(216, 15, 15, 0.1);
-}
 .founder-img {
   clip-path: polygon(0% 0%, 70% 0%, 100% 20%, 100% 100%, 30% 100%, 0% 80%);
 }
@@ -41,14 +34,11 @@
 
 .founder-section {
   background-color: rgb(52, 52, 131);
-
   width: 100%;
   max-width: 700px;
-  height: 400px;
+  height: auto;
   border-radius: 0.5rem;
-  position: relative;
-  right: 120px;
-  /* right:20px; */
+  padding: 200px;
 }
 
 .founder-img-wrapper {
@@ -78,17 +68,58 @@
 
 .founder-text {
   position: relative;
-  top: 50px;
+  /* top: 50px; */
 }
 
 .founder-post {
   background-color: rgb(52, 52, 131);
   border-radius: 20px;
-  padding-top: 1px;
-  padding-bottom: 2px;
+  padding: 5px;
 }
 
 .cofounder-post {
   position: relative;
   top: 2px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .founder-wrapper {
+    max-width: 200px;
+  }
+
+  .founder-section {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .founder-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .founder-text h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .founder-wrapper {
+    max-width: 190px;
+  }
+
+  .founder-img {
+    height: 200px;
+  }
+
+  .founder-text h3 {
+    font-size: 1.25rem;
+  }
+
+  .founder-text h5 {
+    font-size: 0.9rem;
+  }
+
+  .founder-container {
+    padding: 10px;
+  }
 }

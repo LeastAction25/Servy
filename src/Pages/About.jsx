@@ -8,11 +8,11 @@ const AboutUs = () => {
       <div className="row align-items-center">
         {/* Image Section */}
         <div className="col-md-6 text-center mb-4 mb-md-0">
-          <div className="image-wrapper position-relative">
+          <div className=" ">
             <img
               src={slide1}
               alt="Team discussion"
-              className="img-fluid rounded-circle main-image h-75 w-75"
+              className="  main-image h-75 w-75"
             />
             <div className="circle black-circle"></div>
             <div className="circle orange-circle"></div>

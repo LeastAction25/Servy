@@ -1,5 +1,4 @@
-
-import react from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./FounderSection.css";
 import founder from "../assets/founder.jpg";
@@ -9,19 +8,19 @@ import logos from "../assets/logos.jpg";
 const FounderSection = () => {
   return (
     <div className="container py-5 founder-container mt-5">
-      <div className="row align-items-cente">
+      <div className="row align-items-center">
+        {/* Left Section */}
         <div className="col-md-6">
           <div className="position-relative founder-section p-4 text-white rounded">
             {/* Founder Image */}
-            <div className="founder-img-wrapper position-absolute top-0  translate-middle">
+            <div className="founder-img-wrapper position-absolute top-0 translate-middle">
               <img
-                src={logos} // Replace with your image
+                src={logos}
                 alt="logo"
-                className="rounded-circle img-fluid"
+                className="rounded-circle img-fluid p-1"
                 style={{ width: "100px", height: "100px" }}
               />
             </div>
-
             <div className="line position-absolute top-0 end-0 h-100 d-flex flex-column">
               <div className="thin-line"></div>
             </div>
@@ -32,7 +31,6 @@ const FounderSection = () => {
                 <br />
                 FOUNDER & CO-FOUNDER
               </h3>
-              <br />
               <h5 className="mb-4">
                 We are dedicated to providing exceptional products and services
                 to our customers.
@@ -41,18 +39,17 @@ const FounderSection = () => {
           </div>
         </div>
 
-        <div className="col-md-6 text-center text-md-start mb-4 mb-md-0 d-flex gap-5">
+        {/* Right Section */}
+        <div className="col-md-6 d-flex flex-wrap justify-content-center gap-4 p-4">
           {/* Founder Card */}
-          <div className="founder-wrapper">
+          <div className="founder-wrapper ">
             <div className="founder">
-              <div className="founderimg">
-                <img
-                  src={founder}
-                  alt="founder"
-                  className="img-fluid rounded mb-3 founder-img"
-                  style={{ height: "250px", width: "100%" }}
-                />
-              </div>
+              <img
+                src={founder}
+                alt="founder"
+                className="img-fluid rounded mb-3 founder-img"
+                style={{ height: "250px", width: "100%" }}
+              />
               <div className="text-center founder-name">
                 <h3 className="names">G Gopinath</h3>
               </div>
@@ -62,18 +59,16 @@ const FounderSection = () => {
             </div>
           </div>
 
-          {/* Co-Founder Placeholder */}
+          {/* Co-Founder Card */}
           <div className="founder-wrapper">
             <div className="founder">
-              <div className="founderimg">
-                <img
-                  src={cofounder}
-                  alt="cofounder"
-                  className="img-fluid rounded mb-3 founder-img"
-                  style={{ height: "250px", width: "100%" }}
-                />
-              </div>
-              <div className="text-center">
+              <img
+                src={cofounder}
+                alt="cofounder"
+                className="img-fluid rounded mb-3 founder-img"
+                style={{ height: "250px", width: "100%" }}
+              />
+              <div className="text-center founder-name">
                 <h3 className="names">K Adhivishnu</h3>
               </div>
               <div className="text-center founder-post">

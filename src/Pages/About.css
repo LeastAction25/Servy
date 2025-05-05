@@ -1,58 +1,117 @@
 .about-section {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .text-orange {
-    color: #003a84;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 100px;
+}
+
+.text-orange {
+  color: #003a84;
+}
+
+.btn-orange {
+  background-color: #003a84;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-orange:hover {
+  background-color: #002a64;
+}
+
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* max-width: 700px; */
+  margin: 0 auto;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.black-circle {
+  width: 10%;
+  max-width: 80px;
+  aspect-ratio: 1;
+  background-color: black;
+  top: -5%;
+  left: 60%;
+}
+
+.orange-circle {
+  width: 20%;
+  max-width: 150px;
+  aspect-ratio: 1;
+  background-color: #f27321;
+  top: 30%;
+  left: 40%;
+  transform: rotate(20deg);
+  z-index: -1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .btn-orange {
-    background-color: #003a84;
-    color: #fff;
-    border: none;
-    padding: 10px 25px;
-    margin-top: 15px;
-    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
   }
-  
-  .btn-orange:hover {
-    background-color: #003a84;
-  }
-  
+
   .image-wrapper {
-    display: inline-block;
-    position: relative;
-    height:100%;
-    width: 700px;
+    width: 90%;
   }
-  
+
   .main-image {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
+    width: 70%;
   }
-  
-  .circle {
-    position: absolute;
-    border-radius: 50%;
-  }
-  
+
   .black-circle {
-    width: 80px;
-    height: 80px;
-    background-color: black;
-    top: -20px;
-    left: 60%;
+    width: 12%;
+    top: -10%;
+    left: 55%;
   }
-  
+
   .orange-circle {
-    width: 150px;
-    height: 150px;
-    background-color: #f27321;
-    top: 30%;
-    left: 40%;
-    transform: rotate(20deg);
-    z-index: -1;
+    width: 25%;
+    top: 25%;
+    left: 35%;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .btn-orange {
+    padding: 6px 15px;
+    font-size: 0.8rem;
+  }
+
+  .main-image {
+    width: 60%;
+  }
+
+  .black-circle {
+    width: 15%;
+    top: -15%;
+    left: 50%;
+  }
+
+  .orange-circle {
+    width: 30%;
+    top: 20%;
+    left: 30%;
+  }
+}

@@ -2,12 +2,15 @@
 /* servis portfoleo */
 .body{
   margin-top: 0%;
+  /* margin-bottom: 0%; */
 }
 
 .slider_container {
+  /* margin-top: 15rem; */
   width: auto;
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
+  margin-bottom: -15rem;
 }
 
 .slider {

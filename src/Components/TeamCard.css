@@ -1,11 +1,11 @@
-/* From Uiverse.io by joe-watson-sbf */ 
 .flip-card {
   background-color: transparent;
-  width: 290px;
-  height: 320px;
+  width: 100%;
+  max-width: 290px;
+  height: 390px;
   perspective: 1000px;
   font-family: sans-serif;
-  padding-left: 40px;
+  margin: 20px auto;
 }
 
 .title {
@@ -16,9 +16,10 @@
   margin-top: -2.5rem;
   height: 30%;
 }
+
 .skill-list-text {
   margin-top: 10px;
-  text-align: center; 
+  text-align: center;
   font-style: italic;
   color: #0d47a1;
   font-size: 15px;
@@ -26,11 +27,11 @@
   line-height: 1.6;
 }
 
- .skills-inline {
+.skills-inline {
   margin: 4px 0;
   font-size: 14px;
   color: #444;
-} 
+}
 
 .flip-card-inner {
   position: relative;
@@ -45,8 +46,9 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -60,40 +62,78 @@
 }
 
 .flip-card-front {
-  background: linear-gradient(120deg, rgb(86, 164, 233) 60%, rgb(38, 125, 231) 88%,
-     rgb(9, 104, 221) 40%, rgba(31, 133, 210, 0.603) 48%);
+  background: linear-gradient(120deg, rgb(86, 164, 233) 60%, rgb(38, 125, 231) 88%, rgb(9, 104, 221) 40%, rgba(31, 133, 210, 0.603) 48%);
   color: rgb(255, 255, 255);
 }
 
 .flip-card-back {
-  background: linear-gradient(120deg, rgb(86, 164, 233) 30%, rgb(28, 111, 219) 88%,
-     rgb(2, 17, 148) 40%, rgb(75, 157, 220) 78%);
+  background: linear-gradient(120deg, rgb(86, 164, 233) 30%, rgb(28, 111, 219) 88%, rgb(2, 17, 148) 40%, rgb(75, 157, 220) 78%);
   color: white;
   transform: rotateY(180deg);
 }
+
 .team-photo {
-  /* transform: rotate(160deg); */
-  
   height: 70%;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  /* margin-top: 0; */
-margin-bottom: 50px;
+  margin-bottom: 50px;
+  object-fit: cover;
 }
-.socil-media{
+
+.socil-media {
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
   margin-top: 10px;
-  padding: 70px;
-  
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .team-role {
   font-size: 19px;
   color: #ffffff;
   font-weight: 400;
-  /* margin-bottom: 10px; */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .flip-card {
+    width: 100%;
+    max-width: 240px;
+    height: 300px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .team-role {
+    font-size: 16px;
+  }
+
+  .socil-media {
+    gap: 15px;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .flip-card {
+    max-width: 200px;
+    height: 280px;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  .team-role {
+    font-size: 14px;
+  }
+
+  .socil-media {
+    gap: 10px;
+    font-size: 1em;
+  }
 }

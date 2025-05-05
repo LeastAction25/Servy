@@ -1,16 +1,5 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Kaviya from '../assets/kaviyagrey1.jpg';
-// import dheenaImage from '../assets/dheena.jpg';
-// import Bharanimanikandan from '../assets/bharani1.jpg';
-// import vijay from '../assets/vijay.jpg';
-// import fasil from '../assets/fasil.jpg';
-// import React from "react";
-// import TeamCard from "./TeamCard";
-// import RasithKhan from '../assets/Rasith.jpg';
-// import anbu from '../assets/anbu1.jpg';
-// import giri from '../assets/giri1.jpg';
-
 import React from 'react';
 import TeamCard from './TeamCard'; 
 import './TeamProfiles.css';
@@ -22,8 +11,9 @@ import dheenaImage from '../assets/dheena.jpg';
 import giriImage from '../assets/Giri1.jpg';
 import anbu from '../assets/anbu1.jpg';
 import rasith from '../assets/Rasith.jpg';
-// import ProfileCard from './SingleCard';
-// import './SingleCard.css';
+import Nethaji from '../assets/Nethaji.png';
+
+
 
 const teamMembers = [
   // {
@@ -112,16 +102,16 @@ const teamMembers = [
   },
   {
     image: anbu,
-    name: 'Anbu Liyon',
-    role: 'Back End Developer',
+    name: 'Sudhan',
+    role: 'UI/UX Designer',
     bio: 'Project',
     linkedin: 'https://www.linkedin.com/in/anbu-liyon-068352284',
     email: 'anbuliyon@gmail.com ',
     skills: ['Node.js','Express.js','MySQL','MongoDB','Postman API'],
   },
   {
-    image: rasith,
-    name: 'Rasith Khan',
+    image: Nethaji,
+    name: 'Nethaji',
     role: 'UI/UX Designer',
     bio: 'Project',
     linkedin: 'https://www.linkedin.com/in/rasithkhan',

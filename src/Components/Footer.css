@@ -1,19 +1,20 @@
 .site-footer {
   background-color: #003a84;
   color: #fff;
-  /* padding: 2.5rem 1rem 4rem; */
   text-align: center;
   font-family: "Segoe UI", sans-serif;
-  /* margin-bottom: 0%; */
+  /* padding: 2.5rem 1rem 4rem; */
 }
 
 .footer-container {
-  /* max-width: 100%; */
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .footer-logo {
-  width: 100px;
+  width: 90px;
   margin-bottom: 1rem;
 }
 
@@ -27,7 +28,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 1rem;
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
 }
@@ -59,6 +60,7 @@
 .social-icons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -81,14 +83,25 @@
   transform: scale(1.2);
 }
 
+.rede {
+  font-size: 2rem;
+  margin-left: 5px;
+  position: relative;
+  top: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Small devices (phones) */
 @media (max-width: 576px) {
   .footer-logo {
     width: 120px;
   }
 
   .footer-contact {
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.6rem;
+    align-items: center;
   }
 
   .social-icons {
@@ -99,12 +112,48 @@
     font-size: 1.1rem;
     padding: 6px;
   }
+
+  .footer-address {
+    font-size: 0.95rem;
+  }
 }
-.rede {
-  font-size: 32px;
-  margin-left: 5px;
-  position: relative;
-  top: 8px;
-  font-weight: bold;
-  color:#fff ;
+
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .footer-logo {
+    width: 110px;
+  }
+
+  .footer-contact {
+    gap: 0.8rem;
+  }
+
+  .icon-border {
+    font-size: 1.2rem;
+    padding: 7px;
+  }
+
+  .rede {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-contact {
+    gap: 1.2rem;
+  }
+
+  .icon-border {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  .rede {
+    font-size: 2rem;
+  }
 }

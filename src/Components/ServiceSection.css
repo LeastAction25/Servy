@@ -1,11 +1,5 @@
 /* Banner Section */
-.service-banner {
-  height: 300px;
-  background: url("https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg")
-    no-repeat center center/cover;
-  position: relative;
-  top: 100px;
-}
+
 
 .service-banner::before {
   content: "";
@@ -29,8 +23,6 @@
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  top: 100px;
-  bottom: 100px;
 }
 
 .service-card:hover {
@@ -85,13 +77,31 @@
 }
 
 /* Responsive Adjustments */
+@media (max-width: 768px) {
+  .service-banner {
+    height: 250px;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-overlay {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 576px) {
   .service-banner {
     height: 200px;
   }
 
   .card-img-top {
-    height: 160px;
+    height: 150px;
   }
 
   .card-title {
@@ -99,13 +109,13 @@
   }
 
   .card-overlay {
-    padding: 1rem;
+    padding: 0.8rem;
   }
 }
-.tittle{
+
+.tittle {
   color: black;
 }
-
 
 .services-container h1 span {
   color: #003a84;

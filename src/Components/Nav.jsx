@@ -60,7 +60,7 @@ const Nav = () => {
 
            <img src={logo} alt="" className="logo" style={{ height: '60px', width: '62px' }} />
             <span className="red">
-            Servy&nbsp;  
+            Servy
             </span>
          
           </Link>
