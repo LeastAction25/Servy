@@ -86,7 +86,9 @@ const Nav = () => {
         <li>
           <Link to="/about">About Us</Link>
         </li>
-
+        <li>
+          <Link to="/team">Team Profile</Link>
+        </li>
         <li
           className={`dropdown ${isMobile && isDropdownOpen ? "open" : ""}`}
           onClick={(e) => {
@@ -127,16 +129,11 @@ const Nav = () => {
             </li>
           </ul>
         </li>
-
-        <li>
-          <Link to="/team">Team Profile</Link>
-        </li>
-       
-        <li>
-          <Link to="/contact">Contact Us</Link>
-        </li>
         <li>
           <Link to="/Investors">Investors Relation</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>
