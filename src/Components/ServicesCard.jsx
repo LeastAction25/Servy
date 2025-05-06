@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import './servicescard.css';
+import './services.css';
 import image1 from "../assets/image.png";
 import image3 from "../assets/rental.png";
 import image2 from "../assets/esava.png";
