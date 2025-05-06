@@ -130,7 +130,7 @@ const Nav = () => {
           </ul>
         </li>
         <li>
-          <Link to="/Investors">Investors Relation</Link>
+          <Link to="/investors">Investors Relation</Link>
         </li>
         <li>
           <Link to="/contact">Contact Us</Link>
