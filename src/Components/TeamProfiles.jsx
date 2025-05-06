@@ -12,6 +12,8 @@ import giriImage from '../assets/Giri1.jpg';
 import anbu from '../assets/anbu1.jpg';
 import rasith from '../assets/Rasith.jpg';
 import Nethaji from '../assets/Nethaji.png';
+import sudhan from '../assets/sudhan.jpg';
+
 
 
 
@@ -101,7 +103,7 @@ const teamMembers = [
     skills: ['Figma','Adobe XD','Photoshop','Illustrator','Primer Pro'],
   },
   {
-    image: anbu,
+    image:  sudhan,
     name: 'Sudhan',
     role: 'UI/UX Designer',
     bio: 'Project',

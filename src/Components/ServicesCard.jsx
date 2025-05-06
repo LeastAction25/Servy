@@ -2,17 +2,33 @@ import React, { useEffect, useRef, useState } from "react";
 import "./ServicesCard.css";
 
 import image1 from "../assets/image.png";
-import image2 from "../assets/image1.png";
-import image3 from "../assets/image2.png";
+import image3 from "../assets/rental.png";
+import image2 from "../assets/esava.png";
+import image4 from "../assets/event.png";
+import image5 from "../assets/home repare.png";
+import image6 from "../assets/personal.png";
+import image7 from "../assets/waste.png";
+import image8 from "../assets/food.png";
+import image9 from "../assets/medical.png";
+
+
 
 const originalData = [
-  { title: "Housekeeping Services", description: "We understand that Housekeeping Service...", image: image1 },
-  { title: "Kitchen Steward Services", description: "Our Stewarding team is responsible for...", image: image2 },
-  { title: "Laundry Services", description: "Laundry is an essential service...", image: image3 },
+  { title: "Laundry services", description: "Laundry is an essential service...", image: image1 },
+  { title: " E-seva service ", description: "Effortless e-Seva services for all your needs...", image: image2 },
+  { title: " Rental services", description: "Reliable rental services tailored to your needs...", image: image3 },
+  { title: " Event management services", description: "Reliable rental services tailored to your needs...", image: image4 },
+  { title: " Home repairing services", description: "Reliable rental services tailored to your needs...", image: image5 },
+  { title: " Personal care services", description: "Reliable rental services tailored to your needs...", image: image6 },
+  { title: " Waste management", description: "Reliable rental services tailored to your needs...", image: image7 },
+  { title: " Food products", description: "Reliable rental services tailored to your needs...", image: image8 },
+  { title: " Medical services", description: "Reliable rental services tailored to your needs...", image: image9 },
+  
+
 ];
 
 // Clone a few items for looping
-const servicesData = [...originalData, ...originalData.slice(0, 3)];
+const servicesData = [...originalData, ...originalData.slice(0, 0)];
 
 const ServicesCard = () => {
   const [index, setIndex] = useState(0);

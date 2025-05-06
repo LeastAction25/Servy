@@ -2,7 +2,7 @@ import React from "react";
 import "./ServiceSection.css";
 import Waste from "../assets/Waste.jpg";
 import ServicesCard from "./ServicesCard";
-
+import Flow from "../assets/flow.jpg"
 const services = [
   {
     title: "Laundry Services",
@@ -71,11 +71,20 @@ const ServiceSection = () => {
                       <h5 className="card-title text-white">{service.title}</h5>
                     </div>
                   </div>
+               
                 </div>
               </div>
             ))}
+            
           </div>
+          <img
+                     src={Flow}
+      alt="Flow"
+      className="Flow"
+      style={{ maxWidth: '100%', height: 'auto' }}
+                    />
         </div>
+       
       </section>
     </>
   );
