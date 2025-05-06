@@ -19,7 +19,6 @@ import Nav from "./Components/Nav";
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
-  const servicesRef = useRef(null);
   const teamRef = useRef(null);
   const investorsRef = useRef(null);
   const contactRef = useRef(null);
@@ -39,9 +38,6 @@ function App() {
         break;
       case "/about":
         scrollToSection(aboutRef);
-        break;
-      case "/services":
-        scrollToSection(servicesRef);
         break;
       case "/team":
         scrollToSection(teamRef);
