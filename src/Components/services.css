@@ -1,7 +1,6 @@
 .services-container {
     text-align: center;
     padding: 40px 20px;
-    background-color: #f9f9f9;
     overflow: hidden;
   
   }
@@ -17,7 +16,6 @@
   }
   
   .slider-wrapper {
-    overflow: hidden;
     width: 65%;
     max-width: 90%; /* Adjusted for smaller screens */
     margin: auto;
@@ -68,8 +66,14 @@
     .card p {
       font-size: 0.9rem;
     }
+   
   }
-  
+  @media (min-width: 768px) {
+    .slider-wrapper {
+      overflow: hidden;
+      
+    }
+  }
   @media (max-width: 768px) {
     .card {
       width: 220px;
@@ -92,5 +96,6 @@
     .card p {
       font-size: 0.85rem;
     }
+    
   }
   

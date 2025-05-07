@@ -1,8 +1,8 @@
 import React from "react";
 import "./contact.css";
-import businessImg from "../../assets/businessImg1.jpeg"; // Update path as needed
+import businessImg from "../assets/businessImg1.jpeg"; // Update path as needed
 import emailjs from "@emailjs/browser";
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../../../utils/config";
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../../utils/config";
 import { useFormik } from "formik";
 
 const ContactForm = () => {
@@ -27,7 +27,8 @@ const ContactForm = () => {
   });
 
   return (
-    <div className="contact-container">
+    <section id="contact">
+      <div className="contact-container">
       <div className="contact-image">
         <img src={businessImg} alt="Business Consultation" />
       </div>
@@ -74,6 +75,7 @@ const ContactForm = () => {
         </form>
       </div>
     </div>
+    </section>
   );
 };
 

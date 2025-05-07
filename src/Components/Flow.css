@@ -1,74 +1,144 @@
+.flowHead{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+
 .timeline-wrapper {
-    position: relative;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 40px;
-    font-family: sans-serif;
-  }
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  font-family: sans-serif;
+  overflow: visible; 
+  margin-bottom: 4rem; 
+  min-height: 500px;
+}
+
+.svg-line {
+  position: absolute;
+  top: 0;
+  left:15px;
+  width: 100%;
+  height: 800px;
+  z-index: 0;
+}
+
+.steps {
+  position: relative;
+  z-index: 1;
+}
+
+.step {
+  position: absolute;
+  width: 200px;
   
+}
+
+.step .text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2e7d32;
+}
+
+.step .text p {
+  margin: 5px 0 0;
+  font-size: 0.85rem;
+  color: #444;
+ 
+}
+
+/* Icons - positioned separately */
+.icon-wrapper {
+  position: absolute;
+  font-size: 24px;
+  background: #ffffff;
+  color: #388e3c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+}
+
+/* Step and icon positions aligned to path */
+.step-1 { top: -25px; left: -150px;  text-align: end ;}
+.icon-1 { top: -30px; left: 70px; }
+
+.step-2 { top: 35px; left: 440px; }
+.icon-2 { top: 30px; left: 380px; }
+
+.step-3 { top: 165px; left: -170px;  text-align: end ;}
+.icon-3 { top: 160px; left: 35px; }
+
+.step-4 { top: 125px; left: 250px; }
+.icon-4 { top: 230px; left: 250px; }
+
+.step-5 { top: 300px; left: 670px; }
+.icon-5 { top: 295px; left: 620px; }
+
+.step-6 { top: 405px; left: 130px; }
+.icon-6 { top: 400px; left: 315px; }
+
+
+@media (max-width: 768px) {
+ 
   .svg-line {
-    position: absolute;
-    top: 0;
-    left:15px;
-    width: 100%;
-    height: 800px;
-    z-index: 0;
+    top: 60px;
+    left: 45px;
+    width: 2px;
+    height: 98%;
+    background: #ccc;
   }
-  
-  .steps {
-    position: relative;
-    z-index: 1;
-  }
-  
+
+  .step-1 { top: 25px; left: 15px;  text-align: end ;}
+.icon-1 { top: 20px; left: -15px; }
+
+.step-2 { top: 65px; left: 15px; }
+.icon-2 { top: 110px; left: -15px; }
+
+.step-3 { top: 105px; left: 15px;  text-align: end ;}
+.icon-3 { top: 230px; left: -15px; }
+
+.step-4 { top: 145px; left: 15px; }
+.icon-4 { top: 340px; left: -15px; }
+
+.step-5 { top: 185px; left: 15px; }
+.icon-5 { top: 450px; left: -15px; }
+
+.step-6 { top: 225px; left: 15px; }
+.icon-6 { top: 570px; left: -15px; }
+
   .step {
-    position: absolute;
-    width: 200px;
-    
+    position: relative;
+    width: 100%;
+    text-align: left;
   }
-  
+
+  .step .text {
+    margin-left: 10px;
+    padding-left: 20px;
+  }
+
   .step .text h3 {
-    margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #2e7d32;
   }
-  
+
   .step .text p {
-    margin: 5px 0 0;
     font-size: 0.85rem;
     color: #444;
-   
   }
-  
-  /* Icons - positioned separately */
-  .icon-wrapper {
-    position: absolute;
-    font-size: 24px;
-    background: #ffffff;
-    color: #388e3c;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    z-index: 2;
-  }
-  
-  /* Step and icon positions aligned to path */
-  .step-1 { top: -25px; left: -170px;  text-align: end ;}
-  .icon-1 { top: -30px; left: 80px; }
-  
-  .step-2 { top: 35px; left: 480px; }
-  .icon-2 { top: 30px; left: 425px; }
-  
-  .step-3 { top: 165px; left: -170px;  text-align: end ;}
-  .icon-3 { top: 160px; left: 43px; }
-  
-  .step-4 { top: 135px; left: 250px; }
-  .icon-4 { top: 230px; left: 250px; }
-  
-  .step-5 { top: 300px; left: 730px; }
-  .icon-5 { top: 295px; left: 687px; }
-  
-  .step-6 { top: 405px; left: 170px; }
-  .icon-6 { top: 400px; left: 350px; }
-  
+.timeline-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin-top: 0px!important;
+  padding: 40px;
+  font-family: sans-serif;
+  overflow: visible; 
+  margin-bottom: 4rem; 
+  min-height: 600px;
+}
+
+}

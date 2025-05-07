@@ -7,12 +7,11 @@ import logos from "../assets/logos.jpg";
 
 const FounderSection = () => {
   return (
-    <div className="container py-5 founder-container mt-5">
+   <section id="investors">
+     <div className="container py-5 founder-container mt-5">
       <div className="row align-items-center">
-        {/* Left Section */}
         <div className="col-md-6">
           <div className="position-relative founder-section p-4 text-white rounded">
-            {/* Founder Image */}
             <div className="founder-img-wrapper position-absolute top-0 translate-middle">
               <img
                 src={logos}
@@ -24,7 +23,6 @@ const FounderSection = () => {
             <div className="line position-absolute top-0 end-0 h-100 d-flex flex-column">
               <div className="thin-line"></div>
             </div>
-            {/* Content */}
             <div className="mt-5 pt-4 text-center px-3 founder-text">
               <h3 className="fw-bold mb-2">
                 MEET OUR
@@ -39,9 +37,7 @@ const FounderSection = () => {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="col-md-6 d-flex flex-wrap justify-content-center gap-4 p-4">
-          {/* Founder Card */}
           <div className="founder-wrapper ">
             <div className="founder">
               <img
@@ -58,8 +54,6 @@ const FounderSection = () => {
               </div>
             </div>
           </div>
-
-          {/* Co-Founder Card */}
           <div className="founder-wrapper">
             <div className="founder">
               <img
@@ -79,6 +73,7 @@ const FounderSection = () => {
         </div>
       </div>
     </div>
+   </section>
   );
 };
 

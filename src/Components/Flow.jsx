@@ -3,40 +3,42 @@ import "./Flow.css";
 
 const steps = [
   {
-    title: "Sorting",
-    desc: "We sort your laundry based on color and fabric type for optimal cleaning results.",
-    icon: "🔽",
+    title: "Book Services ",
+    desc: "Streamlined booking for exceptional services anytime, anywhere ",
+    icon: "👤",
   },
   {
-    title: "Stain Treatment",
-    desc: "Stubborn stains are pre-treated to increase the chances of successful removal.",
-    icon: "✳️",
+    title: "Services confirmation ",
+    desc: "Your Services is confirmed! Thank you for choosing us.",
+    icon: "✅",
   },
   {
-    title: "Washing",
-    desc: "We use high-quality detergents and modern machines to clean your laundry effectively.",
-    icon: "🧺",
+    title: "Pick Your Services ",
+    desc: "Choose the services you need, tailored to your specific requirements.",
+    icon: "🚚",
   },
   {
-    title: "Drying",
-    desc: "Your laundry is carefully dried using efficient and gentle methods.",
-    icon: "💧",
+    title: "Inprogress ",
+    desc: "Your request is currently in progress. We are working diligently to complete it promptly.",
+    icon: "⏳",
   },
   {
-    title: "Folding & Packing",
-    desc: "We fold your laundry neatly and package it for easy pickup.",
-    icon: "👕",
+    title: "Out for delivery ",
+    desc: "Your order is out for delivery. Arriving at your location soon.",
+    icon: "📦",
   },
   {
-    title: "Ready for Pickup",
-    desc: "Your fresh and clean laundry is ready for you to collect.",
-    icon: "📍",
+    title: "Delivered",
+    desc: "Your order has been successfu delivered. Thank you!",
+    icon: "📬",
   },
 ];
 
 const LaundryTimeline = () => {
   return (
-    <div className="timeline-wrapper">
+    <>
+    <h2 className="flowHead">Our Service Flow</h2>
+     <div className="timeline-wrapper">
       <svg className="svg-line" viewBox="0 0 600 800" preserveAspectRatio="none">
    
    <path
@@ -80,6 +82,8 @@ const LaundryTimeline = () => {
         ))}
       </div>
     </div>
+    </>
+   
   );
 };
 

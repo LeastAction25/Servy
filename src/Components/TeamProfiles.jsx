@@ -125,22 +125,22 @@ const teamMembers = [
 
 const TeamProfiles = () => {
   return (
-    <div className="team-section">
-      <h1 className="team-title">Our Team</h1>
+   <section id="team"> <div className="team-section">
+   <h1 className="team-title">Our Team</h1>
 
-      {/* <div className="featured-profile">
-          <ProfileCard/>
-      </div>  */}
+   {/* <div className="featured-profile">
+       <ProfileCard/>
+   </div>  */}
 
-      <div className="team-grid">
-        {teamMembers.map((member, index) => (
-          <TeamCard key={index} {...member}
-           />
-        ))}
-      </div>
+   <div className="team-grid">
+     {teamMembers.map((member, index) => (
+       <TeamCard key={index} {...member}
+        />
+     ))}
+   </div>
 
-      
-    </div>
+   
+ </div></section>
   );
 };
 

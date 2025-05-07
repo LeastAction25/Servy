@@ -26,6 +26,7 @@ const Home = () => {
   }, []);
   return (
     <>
+   <section id="/">
    <div className="slider_container">
       <div className="slider" ref={sliderRef}>
         <div className="slide one">
@@ -42,7 +43,7 @@ const Home = () => {
         
         </div>
       </div>
-    </div>
+    </div></section>
     </>
   );
 };

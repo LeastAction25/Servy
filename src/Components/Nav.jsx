@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import "./Nav.css";
-// import "./styal.css"
-import logo from "../assets/logo1.png";
-
+import { Link } from "react-scroll";
 import {
   ShowerHead,
   Landmark,
@@ -15,19 +11,14 @@ import {
   Hammer,
   Heart,
   Utensils,
-  ChevronDown,
-  ChevronUp
 } from "lucide-react";
-
-
-
-
-
+import logo from "../assets/logo1.png";
+import "./Nav.css";
 
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // new
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -54,20 +45,15 @@ const Nav = () => {
 
   return (
     <nav className="navbar">
-    <div className="strike-container">
-        <h1 className="strike-text">
-          <Link to="/" className="text-decoration-none ">
-
-           <img src={logo} alt="" className="logo" style={{ height: '60px', width: '62px' }} />
-            <span className="red">
-            Servy
-            </span>
-         
-          </Link>
-        </h1>
+      {/* Logo and Brand */}
+      <div className="strike-container">
+        <Link to="/" className="text-decoration-none strike-text">
+          <img src={logo} alt="Logo" className="logo" />
+          <span className="red">Servy</span>
+        </Link>
       </div>
 
-      {/* Hamburger Icon for Mobile */}
+      {/* Hamburger Icon */}
       {isMobile && (
         <button className="menu-toggle" onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -75,66 +61,34 @@ const Nav = () => {
       )}
 
       {/* Menu Links */}
-      <ul
-        className={`menu-links ${
-          isMobile ? (isMenuOpen ? "show" : "hide") : ""
-        }`}
-      >
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About Us</Link>
-        </li>
-        <li>
-          <Link to="/team">Team Profile</Link>
-        </li>
+      <ul className={`menu-links ${isMobile ? (isMenuOpen ? "show" : "") : ""}`}>
+        <li><Link to="home" smooth={true} offset={-50} duration={300}>Home</Link></li>
+        <li><Link to="about" smooth={true} offset={-50} duration={300}>About Us</Link></li>
+        <li><Link to="team" smooth={true} offset={-50} duration={300}>Team Profile</Link></li>
+
+        {/* Dropdown */}
         <li
           className={`dropdown ${isMobile && isDropdownOpen ? "open" : ""}`}
-          onClick={(e) => {
-            if (isMobile) toggleDropdown(e);
-          }}
+          onClick={(e) => isMobile && toggleDropdown(e)}
         >
           <div className="Servicetext">
             Services <FaChevronDown className="dropdown-icon" />
           </div>
           <ul className="dropdown-menu">
-            <li>
-              <Link to="/services"><ShowerHead  />&nbsp; Laundry services</Link>
-            </li>
-            <li>
-              <Link to="/services"><Landmark />&nbsp; E-seva service</Link>
-            </li>
-            <li>
-              <Link to="/services"><Trash2  />&nbsp; Rental services</Link>
-            </li>
-            <li>
-              <Link to="/services"><CalendarDays  />&nbsp; Event management services</Link>
-            </li>
-            <li>
-              <Link to="/services"> <Hammer  />&nbsp; Home repairing services</Link>
-            </li>
-            <li>
-              <Link to="/services"><Heart  />&nbsp; Personal care services</Link>
-            </li>
-            <li>
-              <Link to="/services"><Utensils />&nbsp; Food products </Link>
-            </li>
-            
-            <li>
-              <Link to="/services"><Stethoscope  />&nbsp; Medical services</Link>
-            </li>
-            <li>
-              <Link to="/services"><Trash2  />&nbsp; Waste management </Link>
-            </li>
+            <li><Link to="services" smooth={true}><ShowerHead /> Laundry services</Link></li>
+            <li><Link to="services" smooth={true}><Landmark /> E-seva service</Link></li>
+            <li><Link to="services" smooth={true}><Trash2 /> Rental services</Link></li>
+            <li><Link to="services" smooth={true}><CalendarDays /> Event management</Link></li>
+            <li><Link to="services" smooth={true}><Hammer /> Home repairing</Link></li>
+            <li><Link to="services" smooth={true}><Heart /> Personal care</Link></li>
+            <li><Link to="services" smooth={true}><Utensils /> Food products</Link></li>
+            <li><Link to="services" smooth={true}><Stethoscope /> Medical services</Link></li>
+            <li><Link to="services" smooth={true}><Trash2 /> Waste management</Link></li>
           </ul>
         </li>
-        <li>
-          <Link to="/investors">Investors Relation</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact Us</Link>
-        </li>
+
+        <li><Link to="investors" smooth={true} offset={-50} duration={300}>Investors Relation</Link></li>
+        <li><Link to="contact" smooth={true} offset={-50} duration={300}>Contact Us</Link></li>
       </ul>
     </nav>
   );

@@ -130,4 +130,26 @@ button {
     font-size: 12px;
     padding: 10px;
   }
+  .contact-image {
+    display: none;
+    flex: 1;
+    min-width: 300px; /* Ensure image section has a minimum width */
+  }
+  .contact-container {
+  
+    padding: 5px!important;
+    height: auto!important;
+  }
+  .contact-form{
+   
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  */
+  }
+  #contact {  
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
 }
